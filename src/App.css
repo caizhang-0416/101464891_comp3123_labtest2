@@ -1,18 +1,96 @@
-.App {
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* App Container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+/* Title Styling */
+.title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Error message styling */
+.error {
+  color: red;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Weather Info Styling */
+.weather-info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.weather-icon {
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.weather-info h2 {
+  font-size: 1.5rem;
+  margin: 10px 0;
 }
 
+.weather-info p {
+  font-size: 1.1rem;
+}
+
+.weather-info .temperature {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Search Bar Styling */
+.search-bar-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 20px;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-bar-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.search-bar-button:hover {
+  background-color: #45a049;
+}
+
+/* App Header */
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -24,10 +102,19 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Logo Styling */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/* Keyframe Animation for Logo */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +122,14 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Accessibility Focus Styles */
+.search-bar:focus, .search-bar-button:focus {
+  outline: 2px solid #4CAF50;
+}
+
+/* Heading */
+h1 {
+  color: #333;
 }
